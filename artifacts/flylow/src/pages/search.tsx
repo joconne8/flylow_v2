@@ -27,6 +27,9 @@ export default function SearchPage() {
     <div>
       <PageTitle kicker="Search / Track / Auto-book" title="Describe the trip once. FlyLow does the checking."
         sub="Flexible travelers get a marketplace-style search, a tracker that you trigger yourself, and an auto-book authority that can only act inside rules you can read." />
+      <div className="mb-6">
+        <NlPanel onApply={(d) => setS((p) => draftToSettings(d, p))} />
+      </div>
       <section className="fl-card p-5 space-y-5" data-testid="form-search">
         <PrimaryFields s={s} set={set} />
         <SecondaryFields s={s} set={set} />
@@ -36,9 +39,6 @@ export default function SearchPage() {
           <p className="text-xs text-muted-foreground max-w-xl">{DEMO_ROUTE_DISCLOSURE}</p>
         </div>
       </section>
-      <div className="mt-6">
-        <NlPanel onApply={(d) => setS((p) => draftToSettings(d, p))} />
-      </div>
     </div>
   );
 }
