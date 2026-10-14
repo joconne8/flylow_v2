@@ -11,11 +11,20 @@ import TrackerPage from '@/pages/tracker';
 import AutobookPage from '@/pages/autobook';
 import VaultPage from '@/pages/vault';
 import ReceiptPage from '@/pages/receipt';
+import BasicPage from '@/pages/basic';
 import { Route, Switch, useLocation, Router as WouterRouter } from 'wouter';
 
 const queryClient = new QueryClient();
 
 function Router() {
+  const [location] = useLocation();
+  if (location === '/basic') {
+    return (
+      <RoutedErrorBoundary>
+        <BasicPage />
+      </RoutedErrorBoundary>
+    );
+  }
   return (
     <Shell>
       <RoutedErrorBoundary>

@@ -16,6 +16,7 @@ Repository: https://github.com/joconne8/flylow_v2
 | `/autobook` | Explicit authority approval, expiry, spending limit, confirmation threshold, immutable traveler/cabin/airline scope, revocation, policy-edit invalidation, repricing scenarios, and audit logs |
 | `/vault` | Connect/disconnect a fictional traveler and payment profile using fake references; no sensitive-data entry |
 | `/receipt/:id` | Persisted simulated receipt with pricing and decision audit trail |
+| `/basic` | Separate original four-step policy-gate prototype for a simpler assignment walkthrough |
 
 ## Run locally
 
@@ -46,6 +47,8 @@ No API keys or database are required. The workspace contains unused backend/shar
 5. Open Auto-book, review the exact policy and traveler/cabin/airline scope, set a future expiry, spending cap and confirmation threshold, and explicitly approve.
 6. Check for matching fares and simulate booking. Use the repricing controls to test an unchanged fare, a fare above the cap, or missing baggage/fare information.
 7. For a fare above the confirmation threshold, explicitly confirm. The app reprices and validates again before creating a receipt. Repeat requests for the same authority and offer reuse the existing receipt.
+
+The original, more basic first webpage is kept separately at **`/basic`**. It is still a complete policy-gate simulation and links back to expanded FlyLow v2 at `/`.
 
 An approved authority is a snapshot. Changing the general search creates a new draft, not a change to an existing authority. **Edit policy** on an authority invalidates it; a new approval is required.
 

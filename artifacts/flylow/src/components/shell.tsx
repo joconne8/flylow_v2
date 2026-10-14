@@ -9,6 +9,7 @@ const NAV = [
   { href: '/tracker', label: 'Track', match: (l: string) => l.startsWith('/tracker') },
   { href: '/autobook', label: 'Auto-book', match: (l: string) => l.startsWith('/autobook') || l.startsWith('/receipt') },
   { href: '/vault', label: 'Vault', match: (l: string) => l.startsWith('/vault') },
+  { href: '/basic', label: 'Basic demo', match: (l: string) => l === '/basic' },
 ];
 
 export function Shell({ children }: { children: ReactNode }) {
