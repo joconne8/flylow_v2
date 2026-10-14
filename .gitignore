@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.env
+.env.*
+*.tsbuildinfo
+.local/
+.agents/
+attached_assets/
+generated-artifacts/
