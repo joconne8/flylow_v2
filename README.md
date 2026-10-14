@@ -4,6 +4,8 @@
 
 FlyLow is a flight-marketplace and constrained-commerce coursework prototype for flexible, price-sensitive travelers. It expands the original policy evaluator into a complete browser experience. All flights, providers, notifications, vault references, and purchases are simulated. No ticket is issued, payment taken, or airline contacted.
 
+**Live prototype:** [FlyLow v2](https://fly-low-assignment-2.replit.app) · [Basic policy-gate demo](https://fly-low-assignment-2.replit.app/basic)
+
 Repository: https://github.com/joconne8/flylow_v2
 
 ## What's built
@@ -127,6 +129,9 @@ Replit Agent and specialized design/testing assistants helped implement and veri
 
 Public code repository: https://github.com/joconne8/flylow_v2
 
-The Replit preview is not yet a verified published prototype link. Publish through Replit and verify the resulting URL while logged out before submission. Nothing has been submitted to Canvas.
+Published Replit prototype: https://fly-low-assignment-2.replit.app  
+Basic prototype: https://fly-low-assignment-2.replit.app/basic
+
+The public deployment reports a successful build. Nothing has been submitted to Canvas.
 
 Suggested Canvas note: **Test results and known limitations are in README.md under Testing and Known limitations.**
